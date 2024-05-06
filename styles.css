@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+:root{
+    --gold: #e6a900;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Home */
+
+#Home{
+    width: 100vw;
+    background-image: url(./assets/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    border: 1px /* */ red;
+    margin: 0 auto;
+    height: 100vh;
+    width: 375px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{ 
+    border: 1px /* */ blue;
+    width: 100%;
+    height: 8%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header a{
+    color: var(--gold);
+    font-size: 14px;
+}
+
+.logo{
+    border: 1px /* */ green;
+    width: 20%;
+    height: 100%;
+}
+
+.logo img{
+    width: 60px;
+}
+
+nav{
+    border: 1px /* */ yellow;
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+/* Hero */
+
+.hero{
+    border: 1px /* */ green;
+    width: 100%;
+    height: 92%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-welcome{
+    border: 1px /* */ red;
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.hero-welcome h1{
+    font-family: "Cedarville Cursive";
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
+
+.hero-welcome p{
+    font-family: "Lobster Two";
+}
+
+.hero-welcome img{
+    width: 100px;
+}
+
+.hero-buttons{
+    border: 1px /* */ blue;
+    height: 30px;
+    width: 70%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-buttons a{
+    border: 1px /* */ red;
+    height: 100%;
+    color: white;
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: black;
+    font-family: "Lobster Two";
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 1px solid var(--gold);
+}
+
+.hero-buttons a:hover{
+    background-color: transparent;
+}
+
+.hero-bottom{
+    border: 1px /* */ red;
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.hero-bottom-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* About Us */
+#About{
+    width: 100vw;
+    height: 235vh;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#About h1, p{
+    font-family: "Lobster Two";
+}
+
+.about-item{
+    border: 1px /* */ blue;
+    height: 70%;
+    color: white;
+    font-size: 11px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.about-item img{
+    width: 60%;
+    border-radius: 16px;
+}
+
+hr{
+    background-color: var(--gold);
+    border: none;
+    border-radius: 24px;
+    width: 20px;
+    height: 5px;
+}
+
+.about-text{
+    border: 1px /* */ red;
+    width: 80%;
+    height: 100%;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-h1{
+    border: 1px /* */ blue;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-history{
+    border: 1px /* */ blue;
+    width: 99%;
+    height: 30%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 9px;
+}
+
+.about-history img{
+    width: 50%;
+    border-radius: 16px;
+}
+
+.about-history h1{
+    color: var(--gold);
+}
+
+.about-awards{
+    border: 1px /* */ blue;
+    margin: 10px;
+    height: 7%;
+    background-color: rgb(135,100,18, 0.8);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 11px;
+}
+
+.about-text2{
+    border: 1px /* */ blue;
+    padding: 10px;
+    height: 50%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.about-text2 a{
+    border: 1px solid var(--gold);
+    width: 35%;
+    height: 10%;
+    border-radius: 16px;
+    color: white;
+    background-color: var(--gold);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text2 a:hover{
+    background-color: transparent;
+}
+
+.about-food{
+    border: 1px /* */ blue;
+    height: 40%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.about-food img{
+    width: 125px;
+    border-radius: 16px;
+}
+
+/* Phone Landscape Mode*/
+@media (max-height: 430px){
+    .about-item img{
+        width: 25%;
+    }
+
+    .about-text{
+        height: 40%;
+        width: 100%;
+    }
+
+    .about-history img{
+        width: 20%;
+    }
+
+    .about-text2{
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .about-food{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 35%;
+    }
+}
+
+/* Phone Landscape Mode*/
+@media (min-width: 600px){
+    .wrapper{
+        width: 550px;
+    }
+
+    .about-item img{
+        width: 30%;
+    }
+
+    .about-history img{
+        width: 20%;
+    }
+    
+}
+
+/* Small Tablets */
+@media (min-width: 740px){
+    .wrapper{
+        width: 740px;
+    }
+
+    hr{
+        height: 50px;
+        width: 10px;
+    }
+
+    .about-item{
+        flex-direction: row;
+    }
+
+    .about-text{
+        font-size: 13px;
+    }
+
+    .about-history{
+        font-size: 14px;
+    }
+
+    .about-history img{
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    .about-item{
+        height: 60%;
+    }
+
+    .about-food{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 35%;
+    }
+
+    .wrapper{
+        width: 1000px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    header a{
+        font-size: 18px;
+    }
+
+    .hero-welcome{
+        width: 60%;
+    }
+
+    .hero-welcome h1{
+        font-size: 3rem;
+    }
+
+    .hero-welcome p{
+        font-size: 1.5rem;
+    }
+
+    .hero-bottom{
+        font-size: 1rem;
+        justify-content: space-around;
+    }
+
+    #About h1{
+        font-size: 40px;
+    }
+
+    .about-text p{
+        font-size: 24px;
+    }
+
+    .about-history p{
+        font-size: 20px;
+    }
+
+    .about-awards{
+        font-size: 18px;
+    }
+
+    .about-text2 p{
+        font-size: 24px;
+    }
+
+    .about-food img{
+        width: 230px;
+    }
+
+}
+
+@media (min-width: 1240px){
+    
+}
+
+
+
