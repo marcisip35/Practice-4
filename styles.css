@@ -323,7 +323,7 @@ hr{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 270vh;
+    height: 245vh;
 
     display: flex;
     flex-direction: column;
@@ -479,7 +479,7 @@ hr{
 }
 
 /* Small Tablets */
-@media (min-width: 740px){
+@media (min-width: 740px) and (min-height: 768px){
     .wrapper{
         width: 740px;
     }
@@ -487,10 +487,6 @@ hr{
     hr{
         height: 50px;
         width: 10px;
-    }
-
-    .about-item{
-        flex-direction: row;
     }
 
     .about-text{
@@ -505,12 +501,35 @@ hr{
         width: 25%;
     }
 
+    .starter-item{
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+
+    .starter-item h4{
+        width: 5%;
+    }
+
+    .starter-item h1{
+        width: 10%;
+    }
+
+    .starter-item p{
+        width: 40%;
+    }
+
+    .starter-item img{
+        width: 200px;
+    }
+
 }
 
 /* Laptops */
 @media (min-width: 1024px){
 
     .about-item{
+        flex-direction: row;
         height: 60%;
     }
 
@@ -573,6 +592,24 @@ hr{
         width: 230px;
     }
 
+    .starter-item{
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .starter-item h4{
+        width: 5%;
+    }
+
+    .starter-item h1{
+        width: 10%;
+    }
+
+    .starter-item p{
+        width: 40%;
+    }
+
 }
 
 /* Desktops */
@@ -616,6 +653,40 @@ hr{
     .about-food img{
         width: 300px;
     }
+
+    #Menu{
+        height: 120vh;
+    }
+
+    .title{
+        height: 200px;
+    }
+
+    .starter{
+        height: 40vh;
+    }
+
+    .starters{
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .starter-item{
+        width: 33%;
+        height: 100%;
+
+        flex-direction: column;
+    }
+
+    .starter-item h1,h4, .starter-item p{
+        width: 100%;
+    }
+
+    .starter-item img{
+        width: 145px;
+    }
     
 }
 
@@ -631,6 +702,16 @@ hr{
     
 }
 
+/* Specific Devices */
+@media(width: 720px) and (height:540px){
+    .starter-item img{
+        width: 95px;
+    }
+}
 
-
+@media(width: 344px) and (height: 882px){
+    .wrapper{
+        width: 344px;
+    }
+}
 
